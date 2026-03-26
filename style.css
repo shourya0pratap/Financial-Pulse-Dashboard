@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +8,50 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  transition: background 0.3s ease-in-out;
+  padding-top: 5rem;
 }
-.light-theme {
-  background: #ccc;
+#theme-btn {
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  width: 100px;
+  aspect-ratio: 2/1;
+  font-size: 1.5rem;
+  transition: all 0.25s ease-in-out;
+  border: 4px solid;
+  border-radius: 16px;
 }
-.dark-theme {
-  background: #3a3a3a;
+#theme-btn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+#theme-btn.light-theme:hover {
+  box-shadow: 5px 5px 1px black;
+}
+#theme-btn.dark-theme:hover {
+  box-shadow: 3px 3px 1px white;
+}
+#theme-btn.light-theme {
+  background: orange;
+  border-color: rgba(51, 51, 51, 0.7);
+}
+#theme-btn.dark-theme {
+  background: blueviolet;
+  border-color: rgba(223, 223, 223, 0.7);
+}
+body.light-theme {
+  color: black;
+  background: #fefefe;
+}
+body.dark-theme {
+  color: white;
+  background: #111;
+}
+header h1 {
+  font-family: "Inter";
+  font-size: 4rem;
+  transition: all 0.3s ease-in-out;
 }

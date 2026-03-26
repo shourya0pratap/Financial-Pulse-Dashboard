@@ -11,6 +11,7 @@ const updateUI = (property) => (element) => (value) => {
 
 // Specialized functions
 const setButtonEmoji = updateUI("textContent")(themeButton);
+const setButtonTheme = updateUI("className")(themeButton);
 const setBodyTheme = updateUI("className")(document.body);
 
 function setTheme(newInd) {
@@ -18,6 +19,7 @@ function setTheme(newInd) {
   const newEmoji = emojis[newInd];
 
   setBodyTheme(`${newTheme}-theme`);
+  setButtonTheme(`${newTheme}-theme`);
   setButtonEmoji(newEmoji);
 
   localStorage.setItem("userTheme", `${newTheme}`);
