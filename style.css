@@ -10,3 +10,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.light-theme {
+  background: #ccc;
+}
+.dark-theme {
+  background: #3a3a3a;
+}
