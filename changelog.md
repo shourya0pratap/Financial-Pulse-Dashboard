@@ -35,3 +35,9 @@ All notable changes to this project will be documented in this file
 ### Added
 
 - Added 4 Functional Zones to the HTML Document
+
+## [0.4.0] - 27-03-26
+
+### Added
+
+- Added Basic API Logic
