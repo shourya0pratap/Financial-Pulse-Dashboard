@@ -23,3 +23,15 @@ All notable changes to this project will be documented in this file
 ### Modified
 
 - Modified the "Change Theme" Button
+
+## [0.2.0] - 27-03-26
+
+### Added
+
+- Added animation for the Hero title
+
+## [0.3.0] - 27-03-26
+
+### Added
+
+- Added 4 Functional Zones to the HTML Document
