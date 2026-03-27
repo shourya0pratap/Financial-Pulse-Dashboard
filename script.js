@@ -40,3 +40,12 @@ const priceFormatter = (symbol) => (precision) => (price) =>
   `${symbol}${price.toFixed(precision)}`;
 
 const usdFormatter = priceFormatter("$")(2);
+
+const alphaUrl = (func) => (symbol) => (interval) => (key) =>
+  `https://www.alphavantage.co/query?function=${func}&symbol=${symbol}&interval=${interval}&apikey=${key}`;
+(async () => {
+  const getIBMIntraday = await fetch(
+    alphaUrl("TIME_SERIES_INTRADAY")("IBM")("5min")(API_KEY),
+  );
+  console.log(getIBMIntraday);
+})();
